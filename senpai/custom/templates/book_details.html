@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Books</title>
+</head>
+<body>
+<!--<p>Book: {{book.title}}</p>-->
+<!--<p>Published On: {{book.pub_date}}</p>-->
+<div class="container">
+  <h2>BOOK DETAILS</h2>
+  <p>                                                       </p>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Publish Date</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for item in books %}
+    <tr>
+        <td>{{item.title}}</td>
+        <td>{{item.pub_date}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
